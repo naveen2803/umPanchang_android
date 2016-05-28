@@ -1,0 +1,15 @@
+<Alloy>
+	<Window class="container" title="Add Event" id="winCustomEvent">
+		<ActionBar id="actionBar" title="Add Event" displayHomeAsUp="true" onHomeIconItemSelected="closeWindow" opacity="0"  />
+		
+		<Label id="lblSelectedDate" class="selectedDateStyle" left="15" top="15"></Label>
+		<Label text="Add event description" left="15" top="40"></Label>
+		<TextField id="taCustomEvent" left="15" right="15" top="70"></TextField>
+		
+		<View class="doneButtonStyle">
+			<View onClick="onAddToCalendar">
+				<Label class="addToCalendarTextStyle" text="Add to Calendar"></Label>
+			</View>
+		</View>
+	</Window>
+</Alloy>

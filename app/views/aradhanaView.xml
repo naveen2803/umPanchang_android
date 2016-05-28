@@ -1,0 +1,26 @@
+<Alloy>
+	<Window class="container" title="Aradhane" id="winAradhane">
+		<ActionBar id="actionBar" title="Aradhane" displayHomeAsUp="true" onHomeIconItemSelected="closeWindow" opacity="0"  />
+		
+		<ListView id="alist" defaultItemTemplate="template1" separatorColor="#Ffcf5b" onItemclick="itemClickHandler">
+			<Templates>
+				<ItemTemplate name="template1">
+					<View height="Ti.UI.SIZE">
+						<Label id="lblDate" bindId="lblDate" top="10" right="10"/>
+						<Label id="lblName" bindId="lblName" top="10" left="10" right="85" bottom="10"/>
+						<Label id="lblOptionsArrow" text="&#xf05a;"/>
+					</View>
+				</ItemTemplate>
+			</Templates>
+			
+			<SearchBar id="sBar" barColor="#FDFBE6" hintText="Search Aradhana" softKeyboardOnFocus="Titanium.UI.Android.SOFT_KEYBOARD_HIDE_ON_FOCUS" onClick="addKeyboard" />
+		</ListView>	
+		
+		<OptionDialog id="dialog" onClick="onOptionSelect">
+            <Options>
+                <Option>Add to calendar</Option>
+                <Option>Get directions</Option>
+            </Options>
+    	</OptionDialog>		
+	</Window>
+</Alloy>

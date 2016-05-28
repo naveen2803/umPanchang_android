@@ -1,0 +1,6 @@
+<Alloy>
+	<Window id="win" class="container" title="Videos" onClose="onCloseVideo" barColor="#FFCF5B" onOpen="loadVideo" id="winWebView">
+		<ActionBar id="actionBar" title="" displayHomeAsUp="true" onHomeIconItemSelected="closeWin" opacity="0"/>
+		<!--<WebView id="webview"></WebView>-->
+	</Window>	
+</Alloy>

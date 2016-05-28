@@ -1,0 +1,30 @@
+<Alloy>
+	<Window class="container" id="winTodaysEvent" onOpen="loadList">
+		<ActionBar id="actionBar"  displayHomeAsUp="true" onHomeIconItemSelected="closeWindow" opacity="0"  />
+		
+		<ListView id="eventlist" defaultItemTemplate="template1" separatorColor="#Ffcf5b" onItemclick="itemClickHandler">
+			<Templates>
+				<ItemTemplate name="template1">
+					<View height="Ti.UI.SIZE">
+						<Label id="lblType" bindId="lblType" top="10" left="10" class="lblSectionTitleStyle"/>
+						<Label id="lblName" bindId="lblName" top="30" left="10" bottom="10"/>
+					</View>
+				</ItemTemplate>
+			</Templates>
+		</ListView>
+		
+		<OptionDialog id="dialog" onClick="onOptionSelect">
+            <Options>
+                <Option>Add to calendar</Option>
+            </Options>
+    	</OptionDialog>	
+    	
+    	<OptionDialog id="dialogAradhane" onClick="onOptionSelect">
+            <Options>
+                <Option>Add to calendar</Option>
+                <Option>Get directions</Option>
+            </Options>
+    	</OptionDialog>	
+    		
+	</Window>
+</Alloy>

@@ -1,0 +1,15 @@
+<Alloy>
+	<Window class="container" title="Shubha/Ashubha" id="winShubha">
+		<ActionBar id="actionBar" title="Shubha/Ashubha" displayHomeAsUp="true" onHomeIconItemSelected="closeWindow" />
+		<ListView id="slist" defaultItemTemplate="template1" separatorColor="#Ffcf5b">
+			<Templates>
+				<ItemTemplate name="template1">
+					<View height="Ti.UI.SIZE">
+						<Label id="lblDate" bindId="lblDate" top="10" right="10"/>
+						<Label id="lblName" bindId="lblName" top="10" left="10" right="85" bottom="10"/>
+					</View>
+				</ItemTemplate>
+			</Templates>
+		</ListView>
+	</Window>
+</Alloy>
