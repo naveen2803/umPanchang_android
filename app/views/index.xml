@@ -23,14 +23,18 @@
 		</ListView>	
 	</View>
 	<View id="centerView" class="container">
+		<Menu id="menu" platform="android">
+		    <!-- Cannot specify node text.  Use attributes only. -->
+		    <MenuItem id="saveitem" title="Save" />
+		    <MenuItem id="closeitem" title="Close" />
+		</Menu>
 		<!--<ActionBar id="actionBar" title="UM Panchanga" icon="three-bars.png" onHomeIconItemSelected="showSideMenu" />-->
-		<Window class="container"  title="UM Panchanga" barColor="#FFCF5B" tintColor="#84270d">
-			
+		<View class="container"  barColor="#FFCF5B" tintColor="#84270d">
 			<OptionDialog id="datePicker" title="Select Date(April 8, 2016 to March 28, 2017)" onClick="dateSelected">
 				<AndroidView platform="android" layout="vertical">
 		            <Picker id="datePicker" 
-		            	minDate="April 8, 2016"
-          				maxDate="March 28, 2017"
+		            	minDate="March 29, 2017"
+          				maxDate="March 28, 2018"
 		            	type="Ti.UI.PICKER_TYPE_DATE"
 		            	onChange="onDateChange" />
 		        </AndroidView>
@@ -51,7 +55,7 @@
 			</View>
 			<ScrollView top="42" scrollType="vertical">				
 				<Label text="Samvatsara:" class="lblSamvatsaraTitleStyle"></Label>
-				<Label id="lblSamvatsara" text="Durmukha Nama"></Label>
+				<Label id="lblSamvatsara" text="Hemalambi"></Label>
 				
 				<View class="leftSectionStyle">
 						<Label class="lblSectionTitleStyle" left="0" top="5" text="Ayana"></Label>
@@ -111,9 +115,7 @@
 				<View class="todayEventsViewStyle" onClick="showTodayEvents">
 					<Label id="btnEvents" class="selectDateTextStyle"></Label>
 				</View>
-				
-				
 			</ScrollView>
-		</Window>
+		</View>
 	</View>	
 </Alloy>

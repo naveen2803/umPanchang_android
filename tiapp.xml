@@ -2,7 +2,7 @@
 <ti:app xmlns:ti="http://ti.appcelerator.org">
     <id>com.madhwaapps.UMPanchanga</id>
     <name>UM Panchanga</name>
-    <version>1.2.1</version>
+    <version>3.0.0</version>
     <publisher>Vinay Pranesh</publisher>
     <url>http://www.pavamana.com</url>
     <description>undefined</description>
@@ -39,11 +39,12 @@
         </plist>
     </ios>
     <android xmlns:android="http://schemas.android.com/apk/res/android">
-        <manifest android:versionCode="200" android:versionName="2.0.0">
+        <manifest android:versionCode="300" android:versionName="3.0.0">
             <application android:theme="@style/Theme.Umpanchangtheme"/>
-            <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="23" android:maxSdkVersion="23"/>
+            <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="23"/>
             <uses-permission android:name="android.permission.READ_CALENDAR"/>
             <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
         </manifest>
     </android>
     <mobileweb>

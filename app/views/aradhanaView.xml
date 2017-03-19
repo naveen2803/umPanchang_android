@@ -1,7 +1,6 @@
 <Alloy>
 	<Window class="container" title="Aradhane" id="winAradhane">
 		<ActionBar id="actionBar" title="Aradhane" displayHomeAsUp="true" onHomeIconItemSelected="closeWindow" opacity="0"  />
-		
 		<ListView id="alist" defaultItemTemplate="template1" separatorColor="#Ffcf5b" onItemclick="itemClickHandler">
 			<Templates>
 				<ItemTemplate name="template1">

@@ -5,7 +5,7 @@ $.lblSelectedDate.text = d.getDate() + " " + getMonthName(d.getMonth()) + ", " +
 
 function onAddToCalendar()
 {
-	addEventToCalecdar(d);
+	checkCalanderPermission();
 }
 
 function getMonthName(monthNumber)
@@ -40,11 +40,28 @@ function getMonthName(monthNumber)
 	}
 }
 
-function addEventToCalecdar(d)
+function checkCalanderPermission()
+{
+	var selectableCalendars = [];
+	if (Ti.Calendar.hasCalendarPermissions()) {
+		selectableCalendars = Ti.Calendar.selectableCalendars;
+		addEventToCalander(selectableCalendars);
+	} else {
+		Ti.Calendar.requestCalendarPermissions(function(e) {
+			if (e.success) {
+				selectableCalendars = Ti.Calendar.selectableCalendars;
+				addEventToCalander(selectableCalendars);
+			} else {
+				alert('Calander permission denied.');
+			}
+		});
+	}
+}
+
+function addEventToCalander(selectableCalendars)
 {
 	if($.taCustomEvent.value != "")
 	{
-		var selectableCalendars = Ti.Calendar.allCalendars;
 		var CALENDAR_TO_USE = selectableCalendars[0].id;
 		var calendar = Ti.Calendar.getCalendarById(CALENDAR_TO_USE);
 		

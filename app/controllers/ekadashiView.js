@@ -16,26 +16,26 @@ var listItems12 = [];
 var selectedItem;
 
 (function() {
-	var data = '[{"transId":1,"eDate":7,"eMonth":4,"eYear":2017,"name":"Kaamada"},{"transId":2,"eDate":22,"eMonth":4,"eYear":2017,"name":"Varoothini"},{"transId":3,"eDate":6,"eMonth":5,"eYear":2017,"name":"Mohini"},{"transId":4,"eDate":22,"eMonth":5,"eYear":2017,"name":"Apara"},{"transId":5,"eDate":5,"eMonth":6,"eYear":2017,"name":"Nirjala"},{"transId":6,"eDate":20,"eMonth":6,"eYear":2017,"name":"YoginI"},{"transId":7,"eDate":4,"eMonth":7,"eYear":2017,"name":"Shayani  TaptamudrAdhAraNa"},{"transId":8,"eDate":20,"eMonth":7,"eYear":2017,"name":"kAmikA"},{"transId":9,"eDate":3,"eMonth":8,"eYear":2017,"name":"Putrada"},{"transId":10,"eDate":18,"eMonth":8,"eYear":2017,"name":"Aja"},{"transId":11,"eDate":2,"eMonth":9,"eYear":2017,"name":"Parivarthini"},{"transId":12,"eDate":16,"eMonth":9,"eYear":2017,"name":"Indira"},{"transId":13,"eDate":1,"eMonth":10,"eYear":2017,"name":"Paashankusha"},{"transId":14,"eDate":15,"eMonth":10,"eYear":2017,"name":"Rama"},{"transId":15,"eDate":31,"eMonth":10,"eYear":2017,"name":"Prabhodhini"},{"transId":16,"eDate":14,"eMonth":11,"eYear":2017,"name":"Utpatti"},{"transId":17,"eDate":30,"eMonth":11,"eYear":2017,"name":"Mokshada"},{"transId":18,"eDate":14,"eMonth":12,"eYear":2017,"name":"Saphala"},{"transId":19,"eDate":29,"eMonth":12,"eYear":2017,"name":"Putrada - vainkutha ekadashi"},{"transId":20,"eDate":12,"eMonth":1,"eYear":2018,"name":"Shat‌tila"},{"transId":21,"eDate":28,"eMonth":1,"eYear":2018,"name":"jayA"},{"transId":22,"eDate":11,"eMonth":2,"eYear":2018,"name":"vijayA"},{"transId":23,"eDate":26,"eMonth":2,"eYear":2018,"name":"Amalaki"},{"transId":24,"eDate":13,"eMonth":3,"eYear":2018,"name":"pApamochanI"},{"transId":25,"eDate":14,"eMonth":3,"eYear":2018,"name":"Shravana Dwadashi - Upavasa"}]';
+	var data = '[{"transId":"1","eDate":"7","eMonth":"4","eYear":"2017","name":"Kaamada"},{"transId":"2","eDate":"22","eMonth":"4","eYear":"2017","name":"Varoothini"},{"transId":"3","eDate":"6","eMonth":"5","eYear":"2017","name":"Mohini"},{"transId":"4","eDate":"22","eMonth":"5","eYear":"2017","name":"Apara"},{"transId":"5","eDate":"5","eMonth":"6","eYear":"2017","name":"Nirjala"},{"transId":"6","eDate":"20","eMonth":"6","eYear":"2017","name":"YoginI"},{"transId":"7","eDate":"4","eMonth":"7","eYear":"2017","name":"Shayani  TaptamudrAdhAraNa"},{"transId":"8","eDate":"20","eMonth":"7","eYear":"2017","name":"kAmikA"},{"transId":"9","eDate":"3","eMonth":"8","eYear":"2017","name":"Putrada"},{"transId":"10","eDate":"18","eMonth":"8","eYear":"2017","name":"Aja"},{"transId":"11","eDate":"2","eMonth":"9","eYear":"2017","name":"Parivarthini"},{"transId":"12","eDate":"16","eMonth":"9","eYear":"2017","name":"Indira"},{"transId":"13","eDate":"1","eMonth":"10","eYear":"2017","name":"Paashankusha"},{"transId":"14","eDate":"15","eMonth":"10","eYear":"2017","name":"Rama"},{"transId":"15","eDate":"31","eMonth":"10","eYear":"2017","name":"Prabhodhini"},{"transId":"16","eDate":"14","eMonth":"11","eYear":"2017","name":"Utpatti"},{"transId":"17","eDate":"30","eMonth":"11","eYear":"2017","name":"Mokshada"},{"transId":"18","eDate":"14","eMonth":"12","eYear":"2017","name":"Saphala"},{"transId":"19","eDate":"29","eMonth":"12","eYear":"2017","name":"Putrada - vainkutha ekadashi"},{"transId":"20","eDate":"12","eMonth":"1","eYear":"2018","name":"Shattila"},{"transId":"21","eDate":"28","eMonth":"1","eYear":"2018","name":"jayA"},{"transId":"22","eDate":"11","eMonth":"2","eYear":"2018","name":"vijayA"},{"transId":"23","eDate":"26","eMonth":"2","eYear":"2018","name":"Amalaki"},{"transId":"24","eDate":"13","eMonth":"3","eYear":"2018","name":"pApamochanI"},{"transId":"25","eDate":"14","eMonth":"3","eYear":"2018","name":"Shravana Dwadashi - Upavasa"}]';
 	eData = JSON.parse(data);
-	loadList();
+	loadList();	
 })();
 
 function loadList()
 {
-	for (var i = 0; i < eData.length; i++)
+	for (var i = 0; i < eData.length; i++) 
 	{
 		var delim = ",";
 		var regex = new RegExp(delim,"g");
-
+			
 		var eFullDate = eData[i].eDate + "/" + eData[i].eMonth + "/" + eData[i].eYear;
 		var eName = eData[i].name.replace(regex,"\n");
-
+		
 			switch( eData[i].eMonth )
 			{
 				case  "1":
 				{
-					listItems1.push({
+					listItems1.push({				
 						lblDate: {
 							text: eFullDate
 						},
@@ -48,13 +48,13 @@ function loadList()
 							eMonth: eData[i].eMonth,
 							eYear: eData[i].eYear
 						}
-
-					});
+						
+					});				
 					break;
 				}
 				case  "2":
 				{
-					listItems2.push({
+					listItems2.push({				
 						lblDate: {
 							text: eFullDate
 						},
@@ -67,13 +67,13 @@ function loadList()
 							eMonth: eData[i].eMonth,
 							eYear: eData[i].eYear
 						}
-
-					});
+						
+					});	
 					break;
 				}
 				case  "3":
 				{
-					listItems3.push({
+					listItems3.push({				
 						lblDate: {
 							text: eFullDate
 						},
@@ -86,13 +86,13 @@ function loadList()
 							eMonth: eData[i].eMonth,
 							eYear: eData[i].eYear
 						}
-
-					});
+						
+					});	
 					break;
 				}
 				case  "4":
 				{
-					listItems4.push({
+					listItems4.push({				
 						lblDate: {
 							text: eFullDate
 						},
@@ -105,13 +105,13 @@ function loadList()
 							eMonth: eData[i].eMonth,
 							eYear: eData[i].eYear
 						}
-
-					});
+						
+					});	
 					break;
 				}
 				case  "5":
 				{
-					listItems5.push({
+					listItems5.push({				
 						lblDate: {
 							text: eFullDate
 						},
@@ -124,13 +124,13 @@ function loadList()
 							eMonth: eData[i].eMonth,
 							eYear: eData[i].eYear
 						}
-
-					});
+						
+					});	
 					break;
 				}
 				case  "6":
 				{
-					listItems6.push({
+					listItems6.push({				
 						lblDate: {
 							text: eFullDate
 						},
@@ -143,13 +143,13 @@ function loadList()
 							eMonth: eData[i].eMonth,
 							eYear: eData[i].eYear
 						}
-
-					});
+						
+					});	
 					break;
 				}
 				case  "7":
 				{
-					listItems7.push({
+					listItems7.push({				
 						lblDate: {
 							text: eFullDate
 						},
@@ -162,13 +162,13 @@ function loadList()
 							eMonth: eData[i].eMonth,
 							eYear: eData[i].eYear
 						}
-
-					});
+						
+					});	
 					break;
 				}
 				case  "8":
 				{
-					listItems8.push({
+					listItems8.push({				
 						lblDate: {
 							text: eFullDate
 						},
@@ -181,13 +181,13 @@ function loadList()
 							eMonth: eData[i].eMonth,
 							eYear: eData[i].eYear
 						}
-
-					});
+						
+					});	
 					break;
 				}
 				case  "9":
 				{
-					listItems9.push({
+					listItems9.push({				
 						lblDate: {
 							text: eFullDate
 						},
@@ -200,13 +200,13 @@ function loadList()
 							eMonth: eData[i].eMonth,
 							eYear: eData[i].eYear
 						}
-
-					});
+						
+					});	
 					break;
 				}
 				case  "10":
 				{
-					listItems10.push({
+					listItems10.push({				
 						lblDate: {
 							text: eFullDate
 						},
@@ -219,13 +219,13 @@ function loadList()
 							eMonth: eData[i].eMonth,
 							eYear: eData[i].eYear
 						}
-
-					});
+						
+					});	
 					break;
 				}
 				case  "11":
 				{
-					listItems11.push({
+					listItems11.push({				
 						lblDate: {
 							text: eFullDate
 						},
@@ -238,13 +238,13 @@ function loadList()
 							eMonth: eData[i].eMonth,
 							eYear: eData[i].eYear
 						}
-
-					});
+						
+					});	
 					break;
 				}
 				case  "12":
 				{
-					listItems12.push({
+					listItems12.push({				
 						lblDate: {
 							text: eFullDate
 						},
@@ -257,14 +257,14 @@ function loadList()
 							eMonth: eData[i].eMonth,
 							eYear: eData[i].eYear
 						}
-
-					});
+						
+					});	
 					break;
 				}
 			}
-
+			
 	}
-
+	
 	/**
 	 * CREATE SECTIONS
 	 */
@@ -280,7 +280,7 @@ function loadList()
 	var section10 = Ti.UI.createListSection();
 	var section11 = Ti.UI.createListSection();
 	var section12 = Ti.UI.createListSection();
-
+	
 	/**
 	 * ADD ITEMS TO SECTIONS
 	 */
@@ -296,12 +296,12 @@ function loadList()
 	section10.items = listItems10;
 	section11.items = listItems11;
 	section12.items = listItems12;
-
+	
 	/**
 	 * ADD SECTIONS TO LIST
 	 */
 	$.elist.sections = [section1, section2, section3, section4, section5, section6, section7, section8, section9, section10, section11, section12];
-
+	
 	/**
 	 * SET SECTION HEADERS
 	 */
@@ -317,7 +317,7 @@ function loadList()
 	$.elist.sections[9].headerTitle = "October";
 	$.elist.sections[10].headerTitle = "November";
 	$.elist.sections[11].headerTitle = "December";
-
+	
 	/**
 	 * SCROLL THE LIST TO CURRENT MONTH
 	 */
@@ -342,20 +342,36 @@ function itemClickHandler(e)
 function onOptionSelect(e)
 {
 	if(e.index == 0)
-		addEventToCalecdar();
+		checkCalanderPermission();
 }
 
-function addEventToCalecdar()
+function checkCalanderPermission()
 {
-	var selectableCalendars = Ti.Calendar.allCalendars;
+	var selectableCalendars = [];
+	if (Ti.Calendar.hasCalendarPermissions()) {
+		selectableCalendars = Ti.Calendar.selectableCalendars;
+		addEventToCalander(selectableCalendars);
+	} else {
+		Ti.Calendar.requestCalendarPermissions(function(e) {
+			if (e.success) {
+				selectableCalendars = Ti.Calendar.selectableCalendars;
+				addEventToCalander(selectableCalendars);
+			} else {
+				alert('Calander permission denied.');
+			}
+		});
+	}
+}
+function addEventToCalander(selectableCalendars)
+{
 	var CALENDAR_TO_USE = selectableCalendars[0].id;
 	var calendar = Ti.Calendar.getCalendarById(CALENDAR_TO_USE);
-
+	
 	var eventYear = parseInt(selectedItem.properties.eYear);
 	var eventMonth = parseInt(selectedItem.properties.eMonth)-1;
 	var eventDate = parseInt(selectedItem.properties.eDate);
 	var existingEvents = calendar.getEventsInDate( eventYear, eventMonth, eventDate );
-
+	
 	var doEventExist = false;
 	for(var i = 0;  i < existingEvents.length; i++)
 	{
@@ -365,7 +381,7 @@ function addEventToCalecdar()
 			break;
 		}
 	}
-
+	
 	if(!doEventExist)
 	{
 		// Create the event
@@ -377,10 +393,10 @@ function addEventToCalecdar()
 		    begin: eventBegins,
 		    end: eventEnds
 		};
-
+	
 		var event = calendar.createEvent(details);
 	}
-
+	
 	showToast();
 }
 
