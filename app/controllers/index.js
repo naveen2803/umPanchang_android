@@ -481,9 +481,7 @@ function onNavDrawerWinOpen(evt) {
             actionBar.homeButtonEnabled = true;
 			//actionBar.icon = "bars.png";
             // toggle the left window when the home icon is selected
-            actionBar.setOnHomeIconItemSelected(function() {
-                showSideMenu();
-           });
+            actionBar.onHomeIconItemSelected = showSideMenu;
         }
     }    
 }
