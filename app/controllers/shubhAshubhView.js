@@ -215,23 +215,23 @@ function loadList()
 	/**
 	 * ADD SECTIONS TO LIST
 	 */
-	$.slist.sections = [section1, section2, section3, section4, section5, section6, section7, section8, section9, section10, section11, section12];
+	$.slist.sections = [section3, section4, section5, section6, section7, section8, section9, section10, section11, section12, section1, section2];
 	
 	/**
 	 * SET SECTION HEADERS
 	 */
-	$.slist.sections[0].headerTitle = "January";
-	$.slist.sections[1].headerTitle = "February";
-	$.slist.sections[2].headerTitle = "March";
-	$.slist.sections[3].headerTitle = "April";
-	$.slist.sections[4].headerTitle = "May";
-	$.slist.sections[5].headerTitle = "June";
-	$.slist.sections[6].headerTitle = "July";
-	$.slist.sections[7].headerTitle = "August";
-	$.slist.sections[8].headerTitle = "September";
-	$.slist.sections[9].headerTitle = "October";
-	$.slist.sections[10].headerTitle = "November";
-	$.slist.sections[11].headerTitle = "December";
+	$.slist.sections[0].headerTitle = "March";
+	$.slist.sections[1].headerTitle = "April";
+	$.slist.sections[2].headerTitle = "May";
+	$.slist.sections[3].headerTitle = "June";
+	$.slist.sections[4].headerTitle = "July";
+	$.slist.sections[5].headerTitle = "August";
+	$.slist.sections[6].headerTitle = "September";
+	$.slist.sections[7].headerTitle = "October";
+	$.slist.sections[8].headerTitle = "November";
+	$.slist.sections[9].headerTitle = "December";
+	$.slist.sections[10].headerTitle = "January";
+	$.slist.sections[11].headerTitle = "February";
 	
 	/**
 	 * SCROLL THE LIST TO CURRENT MONTH

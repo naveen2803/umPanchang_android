@@ -476,10 +476,10 @@ function onNavDrawerWinOpen(evt) {
             
             // show an angle bracket next to the home icon,
             // indicating to users that the home icon is tappable
-            //actionBar.setDisplayHomeAsUp(true);
+            actionBar.setDisplayHomeAsUp(true);
             actionBar.setDisplayShowHomeEnabled(true);
             actionBar.homeButtonEnabled = true;
-			actionBar.icon = "bars.png";
+			//actionBar.icon = "bars.png";
             // toggle the left window when the home icon is selected
             actionBar.setOnHomeIconItemSelected(function() {
                 showSideMenu();

@@ -287,23 +287,23 @@ function loadList()
 	/**
 	 * ADD SECTIONS TO LIST
 	 */
-	$.tlist.sections = [section1, section2, section3, section4, section5, section6, section7, section8, section9, section10, section11, section12];
+	$.tlist.sections = [section3, section4, section5, section6, section7, section8, section9, section10, section11, section12, section1, section2];
 	
 	/**
 	 * SET SECTION HEADERS
 	 */
-	$.tlist.sections[0].headerTitle = "January";
-	$.tlist.sections[1].headerTitle = "February";
-	$.tlist.sections[2].headerTitle = "March";
-	$.tlist.sections[3].headerTitle = "April";
-	$.tlist.sections[4].headerTitle = "May";
-	$.tlist.sections[5].headerTitle = "June";
-	$.tlist.sections[6].headerTitle = "July";
-	$.tlist.sections[7].headerTitle = "August";
-	$.tlist.sections[8].headerTitle = "September";
-	$.tlist.sections[9].headerTitle = "October";
-	$.tlist.sections[10].headerTitle = "November";
-	$.tlist.sections[11].headerTitle = "December";
+	$.tlist.sections[0].headerTitle = "March";
+	$.tlist.sections[1].headerTitle = "April";
+	$.tlist.sections[2].headerTitle = "May";
+	$.tlist.sections[3].headerTitle = "June";
+	$.tlist.sections[4].headerTitle = "July";
+	$.tlist.sections[5].headerTitle = "August";
+	$.tlist.sections[6].headerTitle = "September";
+	$.tlist.sections[7].headerTitle = "October";
+	$.tlist.sections[8].headerTitle = "November";
+	$.tlist.sections[9].headerTitle = "December";
+	$.tlist.sections[10].headerTitle = "January";
+	$.tlist.sections[11].headerTitle = "February";
 	
 	var d = new Date();
 	$.tlist.scrollToItem(d.getMonth(), 0,{animated: false});

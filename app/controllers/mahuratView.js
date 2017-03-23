@@ -329,23 +329,23 @@ function loadList()
 	/**
 	 * ADD SECTIONS TO LIST
 	 */
-	$.mlist.sections = [section1, section2, section3, section4, section5, section6, section7, section8, section9, section10, section11, section12];
+	$.mlist.sections = [section3, section4, section5, section6, section7, section8, section9, section10, section11, section12, section1, section2];
 	
 	/**
 	 * SET SECTION HEADERS
 	 */
-	$.mlist.sections[0].headerTitle = "January";
-	$.mlist.sections[1].headerTitle = "February";
-	$.mlist.sections[2].headerTitle = "March";
-	$.mlist.sections[3].headerTitle = "April";
-	$.mlist.sections[4].headerTitle = "May";
-	$.mlist.sections[5].headerTitle = "June";
-	$.mlist.sections[6].headerTitle = "July";
-	$.mlist.sections[7].headerTitle = "August";
-	$.mlist.sections[8].headerTitle = "September";
-	$.mlist.sections[9].headerTitle = "October";
-	$.mlist.sections[10].headerTitle = "November";
-	$.mlist.sections[11].headerTitle = "December";
+	$.mlist.sections[0].headerTitle = "March";
+	$.mlist.sections[1].headerTitle = "April";
+	$.mlist.sections[2].headerTitle = "May";
+	$.mlist.sections[3].headerTitle = "June";
+	$.mlist.sections[4].headerTitle = "July";
+	$.mlist.sections[5].headerTitle = "August";
+	$.mlist.sections[6].headerTitle = "September";
+	$.mlist.sections[7].headerTitle = "October";
+	$.mlist.sections[8].headerTitle = "November";
+	$.mlist.sections[9].headerTitle = "December";
+	$.mlist.sections[10].headerTitle = "January";
+	$.mlist.sections[11].headerTitle = "February";
 	
 	var d = new Date();
 	$.mlist.scrollToItem(d.getMonth(), 0);

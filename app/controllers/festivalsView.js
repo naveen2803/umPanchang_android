@@ -223,18 +223,18 @@ function loadList()
 	/**
 	 * CREATE SECTIONS
 	 */
-	var section1 = Ti.UI.createListSection();
-	var section2 = Ti.UI.createListSection();
-	var section3 = Ti.UI.createListSection();
-	var section4 = Ti.UI.createListSection();
-	var section5 = Ti.UI.createListSection();
-	var section6 = Ti.UI.createListSection();
-	var section7 = Ti.UI.createListSection();
-	var section8 = Ti.UI.createListSection();
-	var section9 = Ti.UI.createListSection();
-	var section10 = Ti.UI.createListSection();
-	var section11 = Ti.UI.createListSection();
-	var section12 = Ti.UI.createListSection();
+	var section1 = Ti.UI.creatflistSection();
+	var section2 = Ti.UI.creatflistSection();
+	var section3 = Ti.UI.creatflistSection();
+	var section4 = Ti.UI.creatflistSection();
+	var section5 = Ti.UI.creatflistSection();
+	var section6 = Ti.UI.creatflistSection();
+	var section7 = Ti.UI.creatflistSection();
+	var section8 = Ti.UI.creatflistSection();
+	var section9 = Ti.UI.creatflistSection();
+	var section10 = Ti.UI.creatflistSection();
+	var section11 = Ti.UI.creatflistSection();
+	var section12 = Ti.UI.creatflistSection();
 	
 	/**
 	 * ADD ITEMS TO SECTIONS
@@ -255,23 +255,23 @@ function loadList()
 	/**
 	 * ADD SECTIONS TO LIST
 	 */
-	$.flist.sections = [section1, section2, section3, section4, section5, section6, section7, section8, section9, section10, section11, section12];
+	$.flist.sections = [section3, section4, section5, section6, section7, section8, section9, section10, section11, section12, section1, section2];
 	
 	/**
 	 * SET SECTION HEADERS
 	 */
-	$.flist.sections[0].headerTitle = "January";
-	$.flist.sections[1].headerTitle = "February";
-	$.flist.sections[2].headerTitle = "March";
-	$.flist.sections[3].headerTitle = "April";
-	$.flist.sections[4].headerTitle = "May";
-	$.flist.sections[5].headerTitle = "June";
-	$.flist.sections[6].headerTitle = "July";
-	$.flist.sections[7].headerTitle = "August";
-	$.flist.sections[8].headerTitle = "September";
-	$.flist.sections[9].headerTitle = "October";
-	$.flist.sections[10].headerTitle = "November";
-	$.flist.sections[11].headerTitle = "December";
+	$.flist.sections[0].headerTitle = "March";
+	$.flist.sections[1].headerTitle = "April";
+	$.flist.sections[2].headerTitle = "May";
+	$.flist.sections[3].headerTitle = "June";
+	$.flist.sections[4].headerTitle = "July";
+	$.flist.sections[5].headerTitle = "August";
+	$.flist.sections[6].headerTitle = "September";
+	$.flist.sections[7].headerTitle = "October";
+	$.flist.sections[8].headerTitle = "November";
+	$.flist.sections[9].headerTitle = "December";
+	$.flist.sections[10].headerTitle = "January";
+	$.flist.sections[11].headerTitle = "February";
 	
 	var d = new Date();
 	$.flist.scrollToItem(d.getMonth(), 1);
