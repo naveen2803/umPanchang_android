@@ -223,18 +223,18 @@ function loadList()
 	/**
 	 * CREATE SECTIONS
 	 */
-	var section1 = Ti.UI.creatflistSection();
-	var section2 = Ti.UI.creatflistSection();
-	var section3 = Ti.UI.creatflistSection();
-	var section4 = Ti.UI.creatflistSection();
-	var section5 = Ti.UI.creatflistSection();
-	var section6 = Ti.UI.creatflistSection();
-	var section7 = Ti.UI.creatflistSection();
-	var section8 = Ti.UI.creatflistSection();
-	var section9 = Ti.UI.creatflistSection();
-	var section10 = Ti.UI.creatflistSection();
-	var section11 = Ti.UI.creatflistSection();
-	var section12 = Ti.UI.creatflistSection();
+	var section1 = Ti.UI.createListSection();
+	var section2 = Ti.UI.createListSection();
+	var section3 = Ti.UI.createListSection();
+	var section4 = Ti.UI.createListSection();
+	var section5 = Ti.UI.createListSection();
+	var section6 = Ti.UI.createListSection();
+	var section7 = Ti.UI.createListSection();
+	var section8 = Ti.UI.createListSection();
+	var section9 = Ti.UI.createListSection();
+	var section10 = Ti.UI.createListSection();
+	var section11 = Ti.UI.createListSection();
+	var section12 = Ti.UI.createListSection();
 	
 	/**
 	 * ADD ITEMS TO SECTIONS
