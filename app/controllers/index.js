@@ -472,7 +472,7 @@ function onNavDrawerWinOpen(evt) {
 
         if (actionBar) {
             // Now we can do stuff to the actionbar  
-            actionBar.setTitle('  UM Panchanga');
+            actionBar.setTitle('UM Panchanga');
             
             // show an angle bracket next to the home icon,
             // indicating to users that the home icon is tappable
