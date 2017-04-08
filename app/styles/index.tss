@@ -1,3 +1,8 @@
+"ActionBar": {
+    icon: "bars.png",
+    displayHomeAsUp: true
+}
+
 ".container": {
 	backgroundColor:"#FDFBE6"
 }

@@ -23,14 +23,8 @@
 		</ListView>	
 	</View>
 	<View id="centerView" class="container">
-		<Menu id="menu" platform="android">
-		    <!-- Cannot specify node text.  Use attributes only. -->
-		    <MenuItem id="saveitem" title="Save" />
-		    <MenuItem id="closeitem" title="Close" />
-		</Menu>
-		<!--<ActionBar id="actionBar" title="UM Panchanga" icon="three-bars.png" onHomeIconItemSelected="showSideMenu" />-->
 		<View class="container"  barColor="#FFCF5B" tintColor="#84270d">
-			<OptionDialog id="datePicker" title="Select Date(April 8, 2016 to March 28, 2017)" onClick="dateSelected">
+			<OptionDialog id="datePicker" onClick="dateSelected">
 				<AndroidView platform="android" layout="vertical">
 		            <Picker id="datePicker" 
 		            	minDate="March 29, 2017"

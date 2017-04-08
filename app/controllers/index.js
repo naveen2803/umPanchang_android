@@ -452,14 +452,10 @@ drawer.addEventListener("windowDidClose", function(e){
 			showShubhAshubh();
 			break;
 		}
-		case 6:
-		{
-			showVideos();
-			break;
-		}
 	}
 	selectedLeftMenuItem = -1;
 });
+
 
 drawer.addEventListener('open', onNavDrawerWinOpen);
 function onNavDrawerWinOpen(evt) {
@@ -477,14 +473,27 @@ function onNavDrawerWinOpen(evt) {
             // show an angle bracket next to the home icon,
             // indicating to users that the home icon is tappable
             actionBar.setDisplayHomeAsUp(true);
-            actionBar.setDisplayShowHomeEnabled(true);
-            actionBar.homeButtonEnabled = true;
-			//actionBar.icon = "bars.png";
+            actionBar.setHomeButtonEnabled( true );
+            actionBar.setDisplayShowHomeEnabled( true );
+            
             // toggle the left window when the home icon is selected
-            actionBar.onHomeIconItemSelected = showSideMenu;
+            actionBar.setOnHomeIconItemSelected(showSideMenu);
+            
+            /*
+            this.getActivity().onCreateOptionsMenu = function(e) {
+		        var menuItem = e.menu.add({
+		            showAsAction : Ti.Android.SHOW_AS_ACTION_ALWAYS,
+		            icon:  "bars.png"
+		        });
+		        menuItem.addEventListener("click", function(){
+		        	drawer.toggleLeftWindow();
+		        });
+		    };
+		    this.getActivity().invalidateOptionsMenu();
+		    */
         }
     }    
 }
 
+
 drawer.open();
-//$.index.open();
