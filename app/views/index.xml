@@ -60,6 +60,8 @@
 							<Label class="lblLeftSectionStyle" top="145" id="lblTithi"></Label>
 						<Label class="lblSectionTitleStyle" left="0" top="185" text="Yoga"></Label>
 							<Label class="lblLeftSectionStyle" top="205" id="lblYoga"></Label>
+						<Label class="lblSectionTitleStyle" left="0" top="245" text="Paksha"></Label>
+							<Label class="lblLeftSectionStyle" top="205" id="lblPaksha"></Label>	
 					</View>
 					
 					<View class="rightSectionStyle">
@@ -71,6 +73,8 @@
 							<Label class="lblRightSectionStyle" top="145" id="lblNakshatra"></Label>
 						<Label class="lblSectionTitleStyle" left="10" top="185" text="Karana"></Label>
 							<Label class="lblRightSectionStyle" top="205" id="lblKarana"></Label>
+						<Label class="lblSectionTitleStyle" left="0" top="245" text="MasaNiyamaka"></Label>
+							<Label class="lblLeftSectionStyle" top="205" id="lblMasaNiyamaka"></Label>	
 					</View>
 				
 				<View class="middleLineStyle"></View>
