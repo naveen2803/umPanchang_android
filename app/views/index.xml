@@ -13,7 +13,7 @@
 			<ListSection id="section">									
 					<ListItem lblName:text="Aradhane" />
 					<ListItem lblName:text="Ekadashi" />
-					<ListItem lblName:text="Muhurta" />
+					<!--<ListItem lblName:text="Muhurta" />-->
 					<ListItem lblName:text="Festivals/Special days" />
 					<ListItem lblName:text="Tarpana" />
 					<ListItem lblName:text="Shubha/Ashubha" />
